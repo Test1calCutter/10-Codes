@@ -18,6 +18,8 @@ function startCountdown(seconds) {
                 window.location.assign('de/index')
             }else if (langCode === "en"){
                 window.location.assign('en/index')
+            }else if (langCode !== "en" | langCode !== "de"){
+                window.location.assign('en/')
             }
         }
     }, 1000);
