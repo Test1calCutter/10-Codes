@@ -84,8 +84,8 @@ var langCode = userLang.substring(0, 2);
 
 if (langCode !== "de" && langCode !== "en") {
 	if (window.location.href.indexOf("/de/") === -1) {
-		window.location.href = "../en/index.html";
+		window.location.href = "../en/index";
 	} else {
-		window.location.href = "../de/index.html";
+		window.location.href = "../de/index";
 	}
 }
