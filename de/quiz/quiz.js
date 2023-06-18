@@ -201,10 +201,10 @@
 
     if (selectedAnswer === rightAnswer) {
       score++;
-      message.textContent = "Right answer!";
+      message.textContent = "Rightig!";
       label.classList.add("green-bg");
     } else {
-      message.textContent = "Wrong answer!";
+      message.textContent = "Falsch!";
       label.classList.add("red-bg");
 
       answers.forEach(answer => {
@@ -219,12 +219,12 @@
 
     if (isLastQuestion()) {
       button.id = "show-results-btn";
-      button.textContent = "Show results";
+      button.textContent = "Meine ergebnisse";
       clearInterval(quizTimer);
       quizTimer = null;
     } else {
       button.id = "next-btn";
-      button.textContent = "Continue";
+      button.textContent = "Weiter";
     }
 
     notification.appendChild(message);
