@@ -15,9 +15,9 @@ function startCountdown(seconds) {
             console.log(counter)
             console.log(langCode)
             if (langCode === "de") {
-                window.location.assign('de/index.html')
+                window.location.assign('de/index')
             }else if (langCode === "en"){
-                window.location.assign('en/index.html')
+                window.location.assign('en/index')
             }
         }
     }, 1000);
